@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f1ac0e0a.css",
+    "main.js": "/static/js/main.3fb3bb29.js",
+    "static/js/453.3870fa60.chunk.js": "/static/js/453.3870fa60.chunk.js",
+    "static/media/vedatma-logo.png": "/static/media/vedatma-logo.451f50ebaae31b808261.png",
+    "index.html": "/index.html",
+    "main.f1ac0e0a.css.map": "/static/css/main.f1ac0e0a.css.map",
+    "main.3fb3bb29.js.map": "/static/js/main.3fb3bb29.js.map",
+    "453.3870fa60.chunk.js.map": "/static/js/453.3870fa60.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1ac0e0a.css",
+    "static/js/main.3fb3bb29.js"
+  ]
+}

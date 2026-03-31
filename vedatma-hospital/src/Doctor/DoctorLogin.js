@@ -131,7 +131,7 @@ const DoctorLogin = ({ onBack, onLoginSuccess }) => {
 
           {/* Forgot Password */}
           <div className="forgot-password">
-            <a href="#" className="forgot-link">Forget Password?</a>
+            <button type="button" className="forgot-link" style={{background: 'none', border: 'none', padding: 0, font: 'inherit', cursor: 'pointer', outline: 'inherit'}}>Forget Password?</button>
           </div>
 
           {/* Login Button */}

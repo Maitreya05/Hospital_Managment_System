@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { 
   Calendar, 
-  FileText, 
   Activity, 
   History, 
   LogOut,

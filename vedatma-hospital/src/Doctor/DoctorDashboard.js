@@ -8,9 +8,7 @@ import {
   Users, 
   FileText, 
   Activity,
-  LogOut,
-  Clock,
-  User
+  LogOut
 } from 'lucide-react';
 import './DoctorDashboard.css';
 

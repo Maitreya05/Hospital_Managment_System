@@ -3,8 +3,7 @@ import './DoctorOverview.css';
 import { 
   Calendar, 
   Users, 
-  FileText, 
-  Clock
+  FileText 
 } from 'lucide-react';
 
 const DoctorOverview = ({ doctorName, dashboardData }) => {

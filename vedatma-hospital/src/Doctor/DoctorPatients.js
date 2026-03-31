@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 import { 
   Search, 
   User, 
-  Calendar,
   FileText,
-  Plus,
-  Eye,
-  Edit
+  Plus
 } from 'lucide-react';
 import './DoctorPatients.css';
 

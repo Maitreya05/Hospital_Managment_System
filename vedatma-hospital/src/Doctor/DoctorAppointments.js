@@ -3,7 +3,6 @@ import './DoctorAppointments.css';
 import { 
   Calendar, 
   Clock, 
-  User, 
   Phone,
   Search,
   Filter,

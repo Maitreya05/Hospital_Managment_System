@@ -3,7 +3,6 @@ import {
   Search, 
   Filter,
   Calendar,
-  User,
   Pill,
   Clock,
   FileText,

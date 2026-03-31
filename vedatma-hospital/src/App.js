@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Calendar, Clock, History, Pill, Users, FileText, Activity, Shield } from 'lucide-react';
+import { Calendar, History, Users, FileText, Activity, Shield } from 'lucide-react';
 import './App.css';
 import hospitalLogo from './images/vedatma-logo.png';
 import PatientLogin from './Patient/PatientLogin';

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User, Mail, Lock, Phone, Calendar } from 'lucide-react';
+import { Lock, Phone, Calendar } from 'lucide-react';
 import './PatientRegister.css';
 import hospitalLogo from '../images/vedatma-logo.png';
 
