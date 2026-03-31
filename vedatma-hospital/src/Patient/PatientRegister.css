@@ -1,0 +1,255 @@
+/* Patient Registration Page Styles */
+/* .register-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+  } */
+
+  .register-container {
+    height: 100vh;              /* Full viewport height */
+    display: flex;              /* Enable flexbox */
+    justify-content: center;    /* Center horizontally */
+    align-items: center;        /* Center vertically */
+    padding: 1rem;              /* Small padding for safety */
+    overflow: hidden;           /* Prevent ANY scrolling */
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+  }
+  
+  .register-logo {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 8rem;
+    height: auto;
+    z-index: 10;
+  }
+  
+  .register-back-button {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    color: #3b82f6;
+    background: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+    z-index: 10;
+  }
+  
+  .register-back-button:hover {
+    color: #1e40af;
+  }
+  
+  /* .register-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 1px solid #e2e8f0;
+  } */
+
+  .register-card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem 2rem;       /* Slightly reduced padding for better fit */
+    width: 100%;
+    max-width: 400px;
+    max-height: 82vh;           /* Fits comfortably in viewport */
+    /* overflow-y: auto; */     /* REMOVED - No scrolling */
+    border: 1px solid #e2e8f0;
+    box-sizing: border-box;
+    margin-top: -80px;
+  }
+  
+  
+  .register-patient-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .register-patient-icon-circle {
+    width: 5rem;
+    height: 5rem;
+    background-color: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .register-patient-icon-inner {
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .register-patient-icon-plus {
+    color: #3b82f6;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .register-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .register-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-form-label {
+    display: flex;
+    align-items: center;
+    color: #374151;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .register-form-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    color: #3b82f6;
+  }
+  
+  .register-form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    transition: all 0.2s ease;
+  }
+  
+  .register-form-input:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #3b82f6;
+    border-color: transparent;
+  }
+  
+  .register-form-input::placeholder {
+    color: #9ca3af;
+  }
+  
+  .register-date-container {
+    position: relative;
+  }
+  
+  .register-date-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    transition: all 0.2s ease;
+    padding-right: 2.5rem;
+  }
+  
+  .register-date-input:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #3b82f6;
+    border-color: transparent;
+  }
+  
+  .register-date-icon {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    pointer-events: none;
+  }
+  
+  .register-button {
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+    margin-bottom: -20px;
+  }
+  
+  .register-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .login-link-container {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .login-link {
+    color: #3b82f6;
+    background: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .login-link:hover {
+    color: #1e40af;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .register-logo {
+      width: 6rem;
+      top: 1rem;
+      right: 1rem;
+    }
+    
+    .register-back-button {
+      top: 1rem;
+      left: 1rem;
+      font-size: 0.9rem;
+    }
+    
+    .register-card {
+      padding: 1.5rem;
+      max-width: 90vw;
+    }
+  }
+  

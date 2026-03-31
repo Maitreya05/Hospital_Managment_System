@@ -1,0 +1,337 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Background gradient */
+.min-h-screen {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+  width: 100%;
+}
+
+/* Header styles */
+.text-center {
+  text-align: center;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Logo styles */
+.relative {
+  position: relative;
+}
+
+.logo-container {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+}
+
+.logo-main {
+  width: 6rem;
+  height: 6rem;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+}
+
+.logo-center {
+  width: 2rem;
+  height: 2rem;
+  background-color: #1e3a8a;
+  border-radius: 50%;
+  position: relative;
+}
+
+.logo-center::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.75rem;
+  height: 0.75rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.logo-ring-1 {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.25rem;
+  width: 3rem;
+  height: 3rem;
+  border: 4px solid #22c55e;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.logo-ring-2 {
+  position: absolute;
+  bottom: -0.25rem;
+  left: -0.5rem;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #16a34a;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+/* Typography */
+.hospital-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.sanskrit-text {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #1e40af;
+  font-weight: 500;
+}
+
+.hospital-name {
+  font-size: 0.875rem;
+  color: #2563eb;
+  margin-top: 0.25rem;
+}
+
+/* Portal cards container */
+.portals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .portals-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+/* Portal card styles */
+.portal-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.portal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.3);
+}
+
+/* Portal icons */
+.portal-icon-container {
+  width: 5rem;
+  height: 5rem;
+  background: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.patient-icon, .doctor-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #1f2937;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-face {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.icon-plus {
+  position: absolute;
+  bottom: -0.25rem;
+  right: -0.25rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #3b82f6;
+  border-radius: 50%;
+}
+
+.icon-plus::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.doctor-hat {
+  position: absolute;
+  top: -0.25rem;
+  left: -0.25rem;
+  width: 0.75rem;
+  height: 1.5rem;
+  background-color: #1f2937;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.doctor-tie {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1rem;
+  height: 0.75rem;
+  background-color: #4b5563;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* Portal titles and descriptions */
+.portal-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.portal-description {
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+/* Features list */
+.features-list {
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  color: #374151;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.feature-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.75rem;
+}
+
+.feature-icon.blue {
+  color: #3b82f6;
+}
+
+.feature-icon.green {
+  color: #10b981;
+}
+
+/* Buttons */
+.portal-button {
+  width: 100%;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.patient-button {
+  background-color: #3b82f6;
+  color: white;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+.patient-button:hover {
+  background-color: #2563eb;
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+}
+
+.doctor-button {
+  background-color: #10b981;
+  color: white;
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+}
+
+.doctor-button:hover {
+  background-color: #059669;
+  box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hospital-title {
+    font-size: 1.75rem;
+  }
+  
+  .portal-card {
+    padding: 1.5rem;
+  }
+  
+  .portals-container {
+    max-width: none;
+  }
+}
+
